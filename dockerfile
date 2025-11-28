@@ -86,6 +86,6 @@ RUN set -ex; \
 	rm -f get-pip.py
 
 # install "virtualenv", since the vast majority of users of this image will want it
-RUN pip install --no-cache-dir virtualenv
+RUN pip install --no-cache-dir virtualenv --break-system-packages
 
 CMD ["python2"]
